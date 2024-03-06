@@ -1,0 +1,401 @@
+* {
+  scroll-behavior: smooth;
+  list-style: none;
+  text-decoration: none !important;
+}
+
+body {
+  height: 200vh;
+  background-color: #f5f5f5;
+}
+.bg-myNav {
+  background-color: rgba(0, 0, 0, 0.873);
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 999;
+}
+.home {
+  background-image: url("../images/intro-bg.jpg");
+  background-size: cover;
+  height: 100vh;
+  background-attachment: fixed;
+}
+.homeLayer {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 6;
+}
+.layerContent {
+  color: white;
+  text-align: center;
+}
+h1 {
+  font-size: 65px;
+}
+.typingClass::after {
+  content: "";
+  animation-name: typingSkill;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes typingSkill {
+  0% {
+    content: "|";
+  }
+
+  2% {
+    content: "D|";
+  }
+  4% {
+    content: "De|";
+  }
+  6% {
+    content: "Dev|";
+  }
+  8% {
+    content: "Deve|";
+  }
+  10% {
+    content: "Devel|";
+  }
+  12% {
+    content: "Develo|";
+  }
+  14% {
+    content: "Develop|";
+  }
+  16% {
+    content: "Develope|";
+  }
+  18% {
+    content: "Developer|";
+  }
+  30% {
+    content: "Develope|";
+  }
+  30% {
+    content: "Develop|";
+  }
+
+  100% {
+  }
+}
+
+.carouselPart {
+  background-image: url("../images/overlay-bg.jpg");
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+.carousleLayer {
+  background-color: rgba(0, 0, 255, 0.6);
+}
+.carousel-indicators {
+  top: 100%;
+}
+.carousel-indicators [data-bs-target] {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+/* About */
+
+.skill-item p {
+  margin: 7px;
+}
+.title-left {
+  font-size: 2rem;
+}
+
+.lead {
+  font-size: 22.5px;
+  font-weight: 300;
+}
+
+.about .row h5::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 3px;
+  background-color: #0078ff;
+  left: 0;
+  bottom: 0;
+}
+/*************/
+
+/* Services */
+
+.ico-circle {
+  height: 100px;
+  width: 100px;
+  font-size: 2rem;
+  border-radius: 50%;
+  line-height: 1.55;
+  margin: 0 auto;
+  text-align: center;
+  box-shadow: 0 0 0 10px #0078ff;
+  display: block;
+  transition: all 0.5s;
+}
+
+#services .ico-circle:hover i {
+  color: #f6f6f6 !important;
+}
+.ico-circle:hover {
+  background-color: #0062d3 !important;
+}
+
+#services .line {
+  width: 50px;
+  height: 4px;
+  position: absolute;
+}
+
+#services .header-title h2 {
+  font-size: 40px;
+  font-weight: 800;
+}
+
+#services .card-box i {
+  color: #000;
+  font-size: 40px;
+  transition: color var(--animation-duration);
+}
+
+#services .card-box .icn-circle {
+  width: 100px;
+  height: 100px;
+  background-color: #f6f6f6;
+  border-radius: 50%;
+  transition: background-color var(--animation-duration),
+    border var(--animation-duration);
+  transition: 0.6s;
+}
+
+#services .card-box:hover .icn-circle {
+  background-color: #000;
+}
+
+/* #services .card-box i:hover {
+  color: #ffffff;
+} */
+/* End services */
+
+/* Statics */
+
+#statistics {
+  background-image: url(../images/post-3.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  z-index: 99999999;
+  background-attachment: fixed;
+}
+
+#statistics::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #0077ffa3;
+  position: absolute;
+  top: 0;
+  z-index: -2;
+}
+#statistics .static-name {
+  font-size: 16px;
+}
+
+#statistics .statistics-item .stic-ico {
+  font-size: 18px;
+}
+
+/* End Statics */
+
+/* Start Portfolio */
+
+.card-img {
+  overflow: hidden;
+}
+.card-body-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.card img {
+  transition: all 1s ease-in-out;
+}
+.card:hover img {
+  transform: scale(1.5);
+  cursor: pointer;
+}
+
+#portfolio .line {
+  width: 50px;
+  height: 4px;
+  position: absolute;
+}
+/* End Portfolio */
+
+.sect-pt4 {
+  padding-top: 4rem;
+}
+
+.title-box {
+  margin-bottom: 4rem;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.title-a {
+  text-decoration: none;
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.subtitle-a {
+  text-decoration: none;
+  color: #4e4e4e;
+}
+
+.subtitle-a p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.line-mf {
+  width: 40px;
+  height: 5px;
+  background-color: #0078ff;
+  margin: 0 auto;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+#blog .row a {
+  color: #1e1e1e;
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+}
+
+.card-blog .card-category-box {
+  position: absolute;
+  text-align: center;
+  top: -16px;
+  left: 15px;
+  right: 15px;
+  line-height: 25px;
+  overflow: hidden;
+}
+.card-blog .card-body {
+  position: relative;
+}
+
+.card-blog .card-category {
+  display: inline-block;
+  color: #fff;
+  padding: 0 15px 5px;
+  overflow: hidden;
+  background-color: #0078ff;
+  border-radius: 4px;
+}
+
+.card-blog .card-category .category {
+  color: #fff;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  letter-spacing: 0.1px;
+  margin-bottom: 0;
+}
+
+.card-blog .card-title {
+  font-size: 1.3rem;
+  margin-top: 0.6rem;
+  transition: all 0.5s;
+}
+.card-body .card-link:hover {
+  color: #0078ff !important;
+}
+.card-blog .card-description {
+  color: #4e4e4e;
+}
+
+.card-blog .post-author {
+  display: inline-block;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  margin-right: 4px;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+
+.card-blog .post-date {
+  color: #4e4e4e;
+  float: right;
+}
+
+.card-footer .author {
+  transition: all 0.5s;
+}
+.card-footer .author:hover {
+  color: #0078ff;
+}
+/* Start Get in Touch */
+
+.about .row h2::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 3px;
+  background-color: #0078ff !important;
+  left: 10px;
+  bottom: 0;
+}
+
+.about .contact-button button {
+  border-radius: 22px !important;
+}
+
+.list-ico span {
+  color: #0078ff;
+  margin-right: 10px;
+  padding: 16px;
+}
+.list-icoo i {
+  transition: all 0.5s;
+  font-size: 22px;
+}
+
+.list-icoo i:hover {
+  background-color: #0078ff !important;
+  color: #ffffff !important;
+}
+
+/* Footer */
+
+footer {
+  text-align: center;
+  color: #fff;
+  padding: 25px 0;
+  background: #0062d3;
+}
